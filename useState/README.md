@@ -1,0 +1,1 @@
+As of React v16.7.0-alpha, function-based components have a lot more capability which includes the ability to manage state. This project contains a sign up form that uses Reacts `useState` function to manage state within a strongly-typed functional component with TypeScript.

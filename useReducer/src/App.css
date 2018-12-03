@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  width: 220px;
+  margin: 0px auto 0px auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+form .row {
+  margin-bottom: 15px;
+}
+
+form input {
+  width: 100%;
+  font-size: 16px;
+  margin: 3px 0px 3px 0px;
+  padding: 3px 5px;
+  color: #464444;
+}
+
+form .error {
+  color: red;
+  font-size: 12px;
+}
+
+form button {
+  font-size: 16px;
+  color: white;
+  background-color: #484a4e;
+  border: #484a4e solid 1px;
+  border-radius: 3px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #282c34;
+  border-color: #282c34;
+}
+
+form button:disabled {
+  background-color: gray;
+  border-color: gray;
+  cursor: not-allowed;
+}
+
+form .submit-success {
+  color: green;
+}
+
+form .submit-failure {
+  color: red;
+}

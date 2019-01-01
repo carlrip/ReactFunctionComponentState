@@ -1,4 +1,4 @@
-import React, { SFC, ChangeEvent, FormEvent, useReducer } from "react";
+import React, { FC, ChangeEvent, FormEvent, useReducer } from "react";
 
 export interface ISignUpData {
   firstName: string;
@@ -64,7 +64,7 @@ const validateEmailAddress = (value: string): string => {
   return error;
 };
 
-export const SignUp: SFC<IProps> = props => {
+export const SignUp: FC<IProps> = props => {
   const [state, dispatch] = useReducer((state: IState, action: Actions) => {
     switch (action.type) {
       case "FIRSTNAME_CHANGE":

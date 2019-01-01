@@ -1,4 +1,4 @@
-import React, { SFC, ChangeEvent, FormEvent, useState } from "react";
+import React, { FC, ChangeEvent, FormEvent, useState } from "react";
 
 export interface ISignUpData {
   firstName: string;
@@ -13,7 +13,7 @@ interface IProps {
   onSignUp: (data: ISignUpData) => ISignUpResult;
 }
 
-export const SignUp: SFC<IProps> = props => {
+export const SignUp: FC<IProps> = props => {
   const [firstName, setFirstName] = useState("");
   const [firstNameError, setFirstNameError] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
